@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-50 text-slate-800;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-800;
+}
+
+/* Smooth transitions for interactive elements */
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  @apply outline-2 outline-offset-2 outline-amber-600;
+}
+
+/* Utility classes for consistent spacing */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  @apply text-slate-900 font-semibold;
+}
+
+/* Link hover effect */
+.link-hover {
+  @apply hover:text-amber-600 transition-colors duration-300;
+}
+
+/* Card shadow effect */
+.card-shadow {
+  @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+/* Button primary style */
+.btn-primary {
+  @apply bg-slate-800 text-white px-6 py-3 rounded-lg font-medium hover:bg-slate-900 hover:scale-105 transition-all duration-300;
+}
+
+/* Button secondary style */
+.btn-secondary {
+  @apply bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 hover:scale-105 transition-all duration-300;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  @apply bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent;
+}
+
+/* Gold accent divider */
+.gold-divider {
+  @apply w-20 h-1 bg-amber-600 mx-auto mb-8;
+}
