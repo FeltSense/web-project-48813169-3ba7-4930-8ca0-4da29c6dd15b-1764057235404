@@ -151,5 +151,5 @@ export default function Hero() {
         </Link>
       </div>
     </section>
-  </div></div></div></div></div></div></div>);
+  );
 }
